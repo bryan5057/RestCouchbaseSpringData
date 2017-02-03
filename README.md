@@ -11,3 +11,12 @@ Code:
         emit(meta.id, null);
      }
   }
+  
+  
+Here's a sample 'create' JSON body for this Couchbase demo:
+  
+{
+  "id" : "1",	
+  "firstName" : "Bilbo", 
+  "lastName"  : "Baggins"
+}
