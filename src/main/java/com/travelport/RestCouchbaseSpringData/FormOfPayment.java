@@ -1,7 +1,5 @@
 package com.travelport.RestCouchbaseSpringData;
 
-import java.math.BigDecimal;
-
 import org.springframework.data.annotation.Id;
 
 public class FormOfPayment {
@@ -9,51 +7,65 @@ public class FormOfPayment {
 	@Id 
 	private String id;
 
-	private String name;
+	private String type;
 	
-	private String description;
+	private String number;
 	
-	private BigDecimal price;
+	private String expDate;
 
 	/**
-	 * @return the name
+	 * @return the id
 	 */
-	public String getName() {
-		return name;
+	public String getId() {
+		return id;
 	}
 
 	/**
-	 * @param name the name to set
+	 * @param id the id to set
 	 */
-	public void setName(String name) {
-		this.name = name;
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	/**
-	 * @return the description
+	 * @return the type
 	 */
-	public String getDescription() {
-		return description;
+	public String getType() {
+		return type;
 	}
 
 	/**
-	 * @param description the description to set
+	 * @param type the type to set
 	 */
-	public void setDescription(String description) {
-		this.description = description;
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	/**
-	 * @return the price
+	 * @return the number
 	 */
-	public BigDecimal getPrice() {
-		return price;
+	public String getNumber() {
+		return number;
 	}
 
 	/**
-	 * @param price the price to set
+	 * @param number the number to set
 	 */
-	public void setPrice(BigDecimal price) {
-		this.price = price;
+	public void setNumber(String number) {
+		this.number = number;
+	}
+
+	/**
+	 * @return the expDate
+	 */
+	public String getExpDate() {
+		return expDate;
+	}
+
+	/**
+	 * @param expDate the expDate to set
+	 */
+	public void setExpDate(String expDate) {
+		this.expDate = expDate;
 	}
 }
