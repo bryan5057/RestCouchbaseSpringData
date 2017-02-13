@@ -16,6 +16,9 @@ public class Traveler {
 
 	@Field
 	private String lastName;
+	
+	@Field
+	private String email;
 
 	public String getId() {
 		return this.id;
@@ -39,6 +42,14 @@ public class Traveler {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	@Override

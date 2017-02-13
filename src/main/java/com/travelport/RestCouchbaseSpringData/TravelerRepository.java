@@ -15,6 +15,10 @@ public interface TravelerRepository extends CouchbaseRepository<Traveler, String
 	
 	List<Traveler> findByFirstNameAndLastName(@Param("firstName") String firstName, @Param("lastName") String lastName);
 	
+	List<Traveler> findByFirstNameAndLastNameAndEmail(@Param("firstName") String firstName, 
+			@Param("lastName") String lastName,
+			@Param("email") String email);
+	
 	@View(designDocument = "traveler", viewName = "all")
 	List<Traveler> findAll();
 
