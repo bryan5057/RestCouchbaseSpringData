@@ -1,9 +1,9 @@
 package com.travelport.RestCouchbaseSpringData;
 
+import org.springframework.data.couchbase.core.mapping.Document;
+
 import com.couchbase.client.java.repository.annotation.Field;
 import com.couchbase.client.java.repository.annotation.Id;
-
-import org.springframework.data.couchbase.core.mapping.Document;
 
 @Document
 public class Traveler {
@@ -19,6 +19,12 @@ public class Traveler {
 	
 	@Field
 	private String email;
+	
+//	public Traveler(String id, String firstName, String lastName) {
+//		this.id = id;
+//		this.firstName = firstName;
+//		this.lastName = lastName;
+//	}
 
 	public String getId() {
 		return this.id;
